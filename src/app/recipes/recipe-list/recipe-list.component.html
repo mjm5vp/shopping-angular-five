@@ -9,8 +9,10 @@
     <app-recipe-item
       *ngFor="let recipeEl of recipes"
       [recipe]="recipeEl"
-      (recipeSelected)="onRecipeSelected(recipeEl)"
     >
+    <!-- Old method listened for recipeSelected EventEmitter -->
+    <!-- (recipeSelected)="onRecipeSelected(recipeEl)" -->
+
     </app-recipe-item>
   </div>
 </div>
